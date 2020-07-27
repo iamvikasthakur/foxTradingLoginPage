@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Login page
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<style>
+			body,html{
+				height: 100%;
+			}
+			#bg{
+				height: 100%;
+				background-image:url("https://4.bp.blogspot.com/-sV0y88u4lN8/WTFT7mPB81I/AAAAAAAAAw0/SCod5XdGD98hxXzyjtsFu6XElPTQUTzHQCLcB/s1600/Download%2B1920x1080%2BFox%252C%2BStone%252C%2BFire%252C%2BPaper%252C%2BFigures%2BWallpaper%252C%2BBackground%2BFull%2BHD%2B1080p.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center ;
+			}
+			.content{
+				
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				
+				transform: translate(-50%, -50%) 
+			}
+			h1{
+				color:white;
+			}
+			.modal-header{
+				background-color: rgb(255, 166, 0);
+			}
+			.modal-body{
+				background-color: rgba(255, 217, 0, 0.849);
+			}
+			p{
+				color: wheat;
+			}
+		</style>
+
+	</head>
+
+	
+	<body>
+		<div id="bg">	
+			<div class="container">
+				<div class="content">
+					<h1>Welcome to Fox Trading Solutions</h1>
+					<p>Money is the primary objective of any investment and that's we are here for.
+						Let trading work for you is our motto.
+						Invest, Learn, automate your strategies and enjoy money flow</p>
+					<button class="btn btn-outline-primary" data-toggle="modal" data-target="#SignIn">SignIn</button>
+					<button class="btn btn-outline-success" data-toggle="modal" data-target="#Login">Login</button>
+				</div>
+
+				<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" class="form-control" id="password" placeholder="Password" required>
+									</div>
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">SignIn</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="firstname">First Name</label>
+										<input type="text" class="form-control" id="firstname" placeholder="Enter your First Name" required>
+									</div>
+									<div class="form-group">
+										<label for="lastname">Last Name</label>
+										<input type="text" class="form-control" id="lastname" placeholder="Enter your Last Name" required>
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone</label>
+										<input type="tel" pattern="^\d{10}$" class="form-control" id="phone" placeholder="Enter your Phone number" required title="must be 10 digit">
+									</div>
+									<div class="form-group">
+										<label for="email">Email address</label>
+										<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" pattern=".{8,} "class="form-control" id="password" placeholder="Password" required title="Weak password,  must be greater than 7 charcter">
+									</div>
+									<button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
